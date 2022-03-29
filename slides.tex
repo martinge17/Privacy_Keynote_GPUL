@@ -1,0 +1,1621 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\graphicspath{./Resources/}
+\usepackage{hyperref}
+\usepackage{qrcode} 
+
+%Theme Choice:
+%\usetheme{focus}
+\usetheme{Warsaw}
+
+%Title and options
+\title{Ok Google! Deixa de espiarme}
+\author{MartínG (Spaceduck)}
+\date{29-03-2022}
+
+\begin{document}
+
+%Title 
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+
+\section{Introduccion}
+\subsection{Que é a Privacidade?}
+\begin{frame}{Introducción}
+  \framesubtitle{Que é?}
+  \begin{block}{Privacidade}
+    "La privacidad puede ser definida como el ámbito de la vida personal de un individuo, quien se desarrolla en un espacio reservado,
+    el cual tiene como propósito principal mantenerse confidencial."
+  \end{block}
+
+\end{frame}
+
+\subsection{Por que importa?}
+
+
+\begin{frame}{Introducción}
+  \framesubtitle{Por que importa?}
+
+  \begin{block}{Privacidade}
+    "Knowledge is power; Knowledge about you is power over you.
+    Your information will be used to anticipate your actions
+    and manipulate the way you shop, vote, and think."
+  \end{block}\pause
+
+
+
+  \begin{block}
+    "Your personal information and private communications can be “cherrypicked” to make you look like
+    a bad person or a criminal, even if you’re not."
+  \end{block}
+
+\end{frame}
+
+\begin{frame}{Introducción}
+  \framesubtitle{Por que importa?}
+
+  Why Privacy Matters?:\quad
+  \qrcode{https://whyprivacymatters.org/}
+  \qquad
+
+\end{frame}
+
+
+\subsection{Thread Model}
+
+\begin{frame}{Thread Model}
+  \framesubtitle{Que é?}
+
+  \begin{itemize}
+    \item Protexer ao 100\% a túa privacidade é imposible. \pause
+    \item Todo é un intercambio = Conveniencia x Privacidade/Seguridade \pause
+    \item Necesitamos definir un plan.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Thread Model}
+  \framesubtitle{Que é?}
+
+  \begin{block}{Thread Model}
+    Podémolo definir como unha lista coas ameazas para a nosa privacidade/seguridade que son  mais probable que ocorran
+    e das que nos queremos defender.
+  \end{block}\pause
+
+\end{frame}
+
+\section{Seguridade}
+\subsection{Password Manager}
+
+\begin{frame}{Seguridade}
+  \framesubtitle{Password Manager}
+
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      % Your image included here
+      \hspace{30pt}\includegraphics[scale=0.10]{Resources/bitwarden2.png}
+
+      \vspace{1cm}
+
+      \hspace{30pt}\qrcode{https://bitwarden.com/} %TODO: PENDIENTE DE ARREGLAR
+
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Bitwarden}
+        \begin{itemize}
+          \item Open Source
+          \item E2E Encryption
+          \item 2FA
+          \item Selfhost (Opcional)
+          \item Versión Gratuita e de Pago (10€ ano)
+          \item Web,Android,Linux....
+        \end{itemize}
+      \end{block}
+
+      \footnote{Outros Recomendados: KeePassXC}
+
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+\subsection{Disk Encryption}
+
+\begin{frame}{Seguridade}
+  \framesubtitle{Disk Encryption}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.10]{Resources/VeraCrypt_Logo.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://www.veracrypt.fr/en/Home.html} %TODO: PENDIENTE DE ARREGLAR
+
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \begin{block}{VeraCrypt}
+        \begin{itemize}
+          \item Open Source
+          \item File Containers (Folder Encryption)
+          \item Filesystem Encryption
+          \item Linux, MacOS, Windows
+        \end{itemize}
+      \end{block}
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+\section{Privacy}
+\subsection{Providers}
+
+
+%-----------------------------------------------------------------------------------
+
+% TODO: Cambiar, quitar esa imaxen da publi e metela noutra diapo distinta
+
+\begin{frame}{Search Engine}
+  \framesubtitle{Problemas}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.10]{Resources/gads-min.png}
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Google,Amazon, Bing, Yahoo!....}
+        \begin{itemize}
+          \item Rexistran toda a actividade
+          \item Ligan esa actividade a unha conta / IP / Cookies.
+          \item Usan esos datos para perseguirte con anuncios por toda a Web
+          \item Comparten esos datos cos seus "socios".
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Search Engine}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.10]{Resources/duck.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://duck.com} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \begin{block}{DuckDuckGo}
+        \begin{itemize}
+          \item Alternativa mais completa
+          \item Ten versión Onion e sen JavaScript
+          \item "Semi" Open Source
+          \item Usa a API de Bing (entre outros centos de fontes)
+          \item Rexistras as busquedas pero non as IP
+          \item Web,Android,Linux....
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Search Engine}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.10]{Resources/Startpage_logo.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://startpage.com} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Startpage}
+        \begin{itemize}
+          \item Mesmos resultados que Google (Proxy)
+          \item Solo rexistran metadatos como (SO, Navegador e Lengua)
+          \item Web,Android,Linux....
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+  \footnote{Outros Recomendados: Qwant}
+
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{BONUS!}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.2]{Resources/Logo_searx_a.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://searx.me} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Searx}
+        \begin{itemize}
+          \item Metasearch Engine
+          \item Basado en instancias
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Email}
+  \framesubtitle{Problemas}
+
+  \begin{columns}
+
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Gmail,Yahoo....}
+        \begin{itemize}
+          \item Rexistran toda a actividade (horas de envio, metadatos....)
+          \item Escanean e clasifican todos os correos que recibes e envias, para "mellorar" a túa experiencia.
+          \item Usan esos datos para perseguirte con anuncios por toda a Web
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Email}
+  \framesubtitle{Problemas}
+
+  \includegraphics[scale=0.3]{Resources/gmail_xd.png}
+
+  \href{https://money.cnn.com/2017/06/23/technology/business/google-ad-scanning-email-stop/index.html}{Gmail Ads}
+
+\end{frame}
+
+
+\begin{frame}{Email}
+  \framesubtitle{Problemas}
+
+  \includegraphics[scale=0.3]{Resources/gmail.png}
+  \href{https://www.wired.com/story/google-purchases-gmail-adobe-roundup/}{Gmail Purchases}
+
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Email}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.5]{Resources/simple.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://simplelogin.io} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Simplelogin}
+        \begin{itemize}
+          \item Email Alias
+          \item Open Source
+          \item Host on France
+          \item Free (15 Alias), Paid (30E ano, Unlimited Alias)
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+  \footnote{Outras opcións: AnonAddy}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Email}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.2]{Resources/Tutanota_Logo.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://tutanota.com/} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Tutanota}
+        \begin{itemize}
+          \item Germany Based
+          \item E2E Encryption (Zero Access)
+          \item Open Source
+          \item Calendario e Contactos
+          \item Plan Gratuito (1GB)
+          \item Plan Premium (1€ mes)
+          \item No IP log (Solo en certos casos *)
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+  \footnote{We only log IP addresses of individual accounts in case of serious criminal acts such as murder, child pornography, robbery, bomb threats and blackmail after being served a valid court order by a German judge.}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Email}
+  \framesubtitle{Problemas}
+
+  \includegraphics[scale=0.4]{Resources/tutanota_mal.png}
+
+  \href{https://www.cyberscoop.com/court-rules-encrypted-email-tutanota-monitor-messages/}{Tutanota Monitor}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Email}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.2]{Resources/Protonmail_logo.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://protonmail.om} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Protonmail}
+        \begin{itemize}
+          \item Alternativa mais popular
+          \item Open Source
+          \item E2E Encryption (Zero Access)
+          \item Encriptación a non usuarios de Proton (OpenPGP) + via Web
+          \item Calendario e Contactos
+          \item Cuenta gratuita e de pago (48€ ano)
+          \item Solo baixo orden xudicial das cortes Suizas logean IP
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+  \footnote{Outras opcións: CTemplar}
+
+\end{frame}
+
+
+\begin{frame}{Email}
+  \framesubtitle{Recomendacións}
+  \begin{itemize}
+    \item Planificar
+    \item Pouco a Pouco
+    \item Recomendado ter varios emails
+  \end{itemize}
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Drive}
+  \framesubtitle{Problemas}
+
+  \begin{columns}
+
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Google Drive, Onedrive.....}
+        \begin{itemize}
+          \item Rexistran toda a actividade (metadatos....)
+          \item Escanean e clasifican todos os arquivos e fotos subidas.
+          \item Usan esos datos para mostrar publicidade.
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Drive}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.2]{Resources/Protonmail_logo.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://protonmail.com} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{ProtonDrive}
+        \begin{itemize}
+          \item O mesmo que ProtonMail
+          \item Problema -> Precio
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Drive}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.2]{Resources/download.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://nextcloud.com} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{ProtonDrive}
+        \begin{itemize}
+          \item Alternativa a Suite Google Drive (Docs, Drive, Calendar ......)
+          \item SelfHost ou Provider
+          \item Alternativa moi Completa e recomendable
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Drive}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.1]{Resources/cryptomator.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://cryptomator.org} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Cryptomator}
+        \begin{itemize}
+          \item Open Source
+          \item Encripta automaticamente os arquivos
+          \item Podese usar conxuntamente con calquera provedor (GDrive,Onedrive..)
+          \item Recomendado se non queremos liarnos moito.
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+
+  \footnote{Provedores recomendados: Tresorit, Sync.com, PCloud}
+
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Docs}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.1]{Resources/cryptpad.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://cryptpad.fr} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{CryptPad}
+        \begin{itemize}
+          \item Open Source
+          \item Conta con opción para selfhost
+          \item E2E
+          \item Usar sen rexistrarse
+          \item Rexistro = Username + Password
+          \item Word,Excel,Kanban,Whiteboard
+          \item Free ou Pago (5GB = 5€, 75GB = 15€ /mes)
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Youtube}
+  \framesubtitle{Problema}
+
+  \begin{itemize}
+    \item Publicidade Invasiva (Tracking)
+    \item Perfilado
+    \item Algoritmo (Mantente atrapado nun bucle)
+    \item Acabas vendo o contido que Youtube quere que vexas.
+  \end{itemize}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Youtube}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+
+      \begin{figure}
+
+        \includegraphics[scale=0.1]{Resources/lbry.png}
+        \caption{Lbry}
+        \label{Lbry}
+
+      \end{figure}
+
+      \vspace{0.4cm}
+
+      \hspace{40pt}\qrcode{https://lbry.com} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+
+      \begin{figure}
+
+        \includegraphics[scale=0.8]{Resources/Logo_Textless.png}
+        \caption{Odysee}
+        \label{Odysee}
+
+      \end{figure}
+
+      \vspace{0.5cm}
+
+      \hspace{40pt}\qrcode{https://odysee.com} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Youtube}
+  \framesubtitle{Solucións: FrontEnds}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.4]{Resources/piped.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://github.com/TeamPiped/Piped/wiki/Instances} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Piped}
+        \begin{itemize}
+          \item Open Source
+          \item No Ads
+          \item No tracking
+          \item Instancias
+          \item SponsorBlock
+          \item Non conectas cos servidores de Google
+          \item Extensións para redirixir desde youtube.com
+          \item Non recomendo rexistro
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Youtube}
+  \framesubtitle{Solucións: FrontEnds}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.1]{Resources/invidious-colored-vector.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://invidious.io/} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Invidious}
+        \begin{itemize}
+          \item Open Source
+          \item No Ads
+          \item No tracking
+          \item Instancias
+          \item Extensións para redirixir desde youtube.com
+          \item Non recomendo rexistro
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Youtube}
+  \framesubtitle{Solucións: Apps}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.4]{Resources/new_pipe_icon_5.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://newpipe.net} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{NewPipe (Android)}
+        \begin{itemize}
+          \item Free/Libre Software
+          \item Non usa ningunha API de Google
+          \item Non necesitas conta.
+          \item Podes Importar Subscripcións + Feed
+          \item No Ads nin tracking
+          \item Pop-Up e Background
+          \item Descargar videos e audio
+          \item Todas as calidades
+
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+
+  \footnote{Instalase en F-Droid}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{DNS}
+  \includegraphics[scale=0.2]{Resources/dns.png}
+
+\end{frame}
+
+
+\begin{frame}{DNS}
+  \framesubtitle{Problema}
+
+  \begin{block}{DNS}
+    \begin{itemize}
+      \item O teu provedor DNS sabe que sitios visitas.
+      \item Por defecto usasa o da túa ISP ou Google
+    \end{itemize}
+  \end{block}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{DNS}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.4]{Resources/Quad9_logo.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://quad9.net} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Quad9}
+        \begin{itemize}
+          \item Non-Profit
+          \item DoH, DoT, DNSCrypt, DNSSec
+          \item Optional Filtering (Ads, Malware)
+          \item No Logging
+          \item Rapido
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{DNS}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.4]{Resources/dnswatch.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://dns.watch} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{DNS.watch}
+        \begin{itemize}
+          \item DoH, DoT, DNSCrypt, DNSSec
+          \item No Logging
+          \item Rapido
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------
+\subsection{Software}
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Navegador}
+  \subtitle{Problema}
+
+  \begin{block}{Chrome,Edge...}
+
+    \begin{itemize}
+      \item Recolecta metadatos de uso (conexión,tempo de uso...)
+      \item Enlaza esos metadatos coa túa conta.
+      \item Recolecta historial de busqueda
+      \item Escasa protección cookies, publicidade, fingerprint..
+    \end{itemize}
+
+  \end{block}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Navegador}
+  \subtitle{Problema}
+  \includegraphics[scale=0.3]{Resources/chrome_cookie.png}
+
+\end{frame}
+
+\begin{frame}{Navegador}
+  \subtitle{Problema}
+  \includegraphics[scale=0.3]{Resources/chrome_incognito.png}
+
+\end{frame}
+
+\begin{frame}{Navegador}
+  \subtitle{Problema}
+  \includegraphics[scale=0.3]{Resources/marketshare.png}
+
+\end{frame}
+
+\begin{frame}{Navegador}
+  \subtitle{Problema}
+
+  Browser Privacy Test:\quad
+  \qrcode{https://coveryourtracks.eff.org/}
+  \qquad
+
+\end{frame}
+
+
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Navegador}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.1]{Resources/firefox_logo.png}
+
+      \vspace{1cm}
+
+      Consellos Firefox:\quad
+      \qrcode{https://www.privacyguides.org/browsers/} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Firefox}
+        \begin{itemize}
+          \item Open Source
+          \item Enhanced Protection
+          \item Block Tracking
+          \item Recomendado instalar uBlock Origin
+          \item Recomendado Cambiar Axustes
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------
+
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Navegador}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.5]{Resources/Brave_logo.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://brave.com} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Brave}
+        \begin{itemize}
+          \item Open Source
+          \item Bloquea Publicidade, Cookies, Trackers
+          \item Recomendado desactivar todo o relacionado con Crypto
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Navegador}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.6]{Resources/UBlock_Origin.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://ublockorigin.com/} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{uBlock Origin}
+        \begin{itemize}
+          \item Open Source
+          \item Bloquea Publicidade,Trackers....
+          \item Consume poucos recursos
+          \item Fai a navegación moi fluida.
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Navegador}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.22]{Resources/tosdr.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://tosdr.org} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Terms of Service; Didn’t Read}
+        \begin{itemize}
+          \item Open Source
+          \item Puntúa as webs segundo a súa Privacidade
+          \item Pequeno resumo dos ToS
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Comunicacións}
+  \subtitle{Problema}
+
+  \begin{block}{MS Teams, Discord, Slack....}
+
+    \begin{itemize}
+      \item Recolectan datos de uso (conexión,tempo de uso...)
+      \item Enlaza esos metadatos coa túa conta.
+      \item Comparten datos con "socios".
+      \item Non E2E.
+    \end{itemize}
+
+  \end{block}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Comunicacións}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.9]{Resources/element.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://element.io/} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Element}
+        \begin{itemize}
+          \item Basado en Matrix
+          \item Open Source
+          \item Opción Self-Host
+          \item Opción On-Premise
+          \item Usado por moitas institucións públicas e universidades.
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+  \footnote{Outras alternativas: Jitsi Meet...}
+
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------
+
+
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Comunicacións}
+  \subtitle{Problema}
+
+  \begin{block}{Whatsapp,Telegram....}
+
+    \begin{itemize}
+      \item Recolectan metadatos(fechas, Contactos .....)
+      \item Telegram non usa E2E por defecto (solo en algúns casos)
+      \item Comparten datos con "socios".
+      \item Non son FOSS
+    \end{itemize}
+
+  \end{block}
+
+\end{frame}
+
+%-----------------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------------
+
+\begin{frame}{Comunicacións}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.9]{Resources/signal.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://signal.org} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Signal}
+        \begin{itemize}
+          \item Open Source
+          \item Opción Self-Host
+          \item Opción mais popular.
+          \item Problemas: Necesitar número de telf.
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+%-----------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------
+
+\subsection{Sistema Operativo}
+
+%-----------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------
+
+
+\begin{frame}{Sistema Operativo}
+  \framesubtitle{Problemas}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.2]{Resources/w10.png}
+
+      \qrcode{https://www.theverge.com/2017/4/5/15188636/microsoft-windows-10-data-collection-documents-privacy-concerns}
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Windows}
+        \begin{itemize}
+          \item Require unha conta (Windows 11)
+          \item Publicidade
+          \item Recolección masiva de datos (uso,keylog....)
+          \item Telemetria integrada na base do OS.
+          \item Uso excesivo de recursos
+          \item 100€ licencia
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Sistema Operativo}
+  \framesubtitle{Problemas}
+
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.5]{Resources/Tux.png}
+
+      \vspace{1cm}
+
+      \qrcode{https://distrochooser.de/es} %TODO: PENDIENTE DE ARREGLAR
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Linux,GNU + Linux, GNU/Linux..}
+        \begin{itemize}
+          \item Open Source
+          \item Gran variedad de opcións a escoller.
+          \item Completamente Personalizable.
+          \item Adaptase as necesidades do usuario.
+          \item Problemas: Gran variedad de opcións a escoller.
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+%------------------------------------------------------------------------------------------
+
+
+\begin{frame}{Sistema Operativo}
+  \framesubtitle{Problemas}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.1]{Resources/android.png}
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Android}
+        \begin{itemize}
+          \item Open Source (AOSP)
+          \item Comunidades de desarrollo moi activas. (ROM)
+          \item Compatible con unha amplia gama de dispositivos.
+          \item Telemetria integrada na base do OS.
+          \item Lixeiro
+          \item Problema??
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}{Sistema Operativo}
+  \framesubtitle{Problemas}
+
+  \includegraphics[scale=0.12]{Resources/gapps.jpeg}
+
+\end{frame}
+
+\begin{frame}{Sistema Operativo}
+  \framesubtitle{Problemas}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.5]{Resources/gps.png}
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Google Play Services}
+        \begin{itemize}
+          \item Spyware
+          \item Recolecta todo tipo de datos.
+          \item Permite a Google acceder ao Smartphone
+          \item Consume moitos recursos (Batería e Datos)
+          \item Sin el moitas apps van a funcionar mal.
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+  \footnote{Alternativas: MicroG ou simplemento AOSP}
+
+\end{frame}
+
+
+\begin{frame}
+  \includegraphics[scale=0.4]{Resources/android_battery.png}
+\end{frame}
+
+\begin{frame}
+  \includegraphics[scale=0.3]{Resources/location_google.png}
+\end{frame}
+
+\begin{frame}
+  \includegraphics[scale=0.3]{Resources/assistant_messages.png}
+\end{frame}
+
+\begin{frame}
+
+  Estudio:\quad
+  \qrcode{https://www.scss.tcd.ie/Doug.Leith/Android_privacy_report.pdf}
+  \qquad
+
+
+\end{frame}
+
+
+\begin{frame}
+
+  \includegraphics[scale=0.5]{Resources/data _collection_summary.jpg}
+
+\end{frame}
+
+\begin{frame}
+
+  \includegraphics[scale=0.4]{Resources/data2.png}
+
+\end{frame}
+
+
+
+\begin{frame}{Sistema Operativo}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.3]{Resources/fdroid.png}
+
+      \qrcode{https://f-droid.org/}
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{F-Droid}
+        \begin{itemize}
+          \item Tenda de Apps FOSS
+          \item Fácil de usar.
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+\begin{frame}{Sistema Operativo}
+  \framesubtitle{Solucións}
+
+  FDroid Starter Pack :\quad
+  \qrcode{https://www.reddit.com/r/fossdroid/comments/o1gmb8/the_im_new_to_fdroid_starter_pack/}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Sistema Operativo}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.4]{Resources/blokada.png}
+
+      \qrcode{https://f-droid.org/en/packages/org.blokada.alarm/}
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Blokada v4}
+        \begin{itemize}
+          \item Android Only
+          \item Open Source
+          \item Firewall.
+          \item Permite bloquear moitos dos trackers en Android.
+          \item Consume poucos recursos.
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+  \footnote{Alternativa iOS: LockDown}
+
+\end{frame}
+
+
+\begin{frame}{Sistema Operativo}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.3]{Resources/lockdown.png}
+
+      \qrcode{https://f-droid.org/en/packages/org.blokada.alarm/}
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{LockDown}
+        \begin{itemize}
+          \item iOS e Mac
+          \item Open Source
+          \item Firewall.
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}{Sistema Operativo}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.4]{Resources/osm.png}
+
+      \qrcode{https://osmand.net/}
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{OsmAnd}
+        \begin{itemize}
+          \item Open Source
+          \item Permite mapas offline.
+          \item Funciona moi ben.
+          \item Desde F-Droid é gratuita. En GPlay é de pago
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+\subsection{IoT}
+
+\begin{frame}
+  \includegraphics[scale=0.3]{Resources/home.png}
+\end{frame}
+
+
+\begin{frame}{IoT}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.1]{Resources/pihole__.jpeg}
+
+      \vspace{1cm}
+
+      \qrcode{https://pi-hole.net/}
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Pi-Hole}
+        \begin{itemize}
+          \item Open Source
+          \item Bloquea publicidade e trackers en toda a rede.
+          \item Instalación moi sinxela (3 pasos) (30 minutos)
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+\begin{frame}{IoT}
+  \framesubtitle{Solucións}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.2]{Resources/hassio.jpeg}
+
+      \vspace{1cm}
+
+
+      \qrcode{https://www.home-assistant.io/}
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{block}{Home Assistant}
+        \begin{itemize}
+          \item Open Source
+          \item Integración con moitos dispositivos
+          \item Smart-Home en local.
+        \end{itemize}
+      \end{block}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+  PrivacyGuides: \quad
+  \qrcode{https://www.privacyguides.org/}
+
+  \vspace{1cm}
+
+
+  \hspace{30pt}reddit.com/r/degoogle \quad
+  \hspace{30pt}\qrcode{https://www.reddit.com/r/degoogle/}
+
+  \vspace{0.5cm}
+
+  reddit.com/r/fossdroid \quad
+  \qrcode{https://www.reddit.com/r/fossdroid/}
+
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{FIN}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % Your image included here
+      \includegraphics[scale=0.3]{Resources/me2.png}
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+
+      \LARGE Moitas Grazas!!
+
+      \vspace{1cm}
+
+
+      \qrcode{https://github.com/martinge17}
+
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
+
+
+
+
+\end{document}
